@@ -1,0 +1,383 @@
+@charset "UTF-8";
+/****** General ***********/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/****** Header ***********/
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px 7px 0px;
+}
+
+.header-form {
+  display: flex;
+  background-color: #eaeaea;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.header-form .search-input {
+  background-color: transparent;
+  border: 0px solid;
+  font-size: 16px;
+  padding: 13px 0px 13px 0px;
+}
+
+/****** Présentation-section ***********/
+.section-presentation {
+  background: #f6f6f6;
+  padding: 25px 20px 60px 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.section-presentation .h2-presentation {
+  text-align: center;
+}
+.section-presentation .content-presentation {
+  font-weight: lighter;
+  font-size: large;
+  text-align: center;
+}
+.section-presentation nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.section-presentation nav .presentation-button {
+  background: linear-gradient(0deg, #9356dc 0%, #f46dce 100%);
+  color: white;
+  font-size: 16px;
+  border: 1px;
+  border-radius: 25px;
+  padding: 15px 20px 15px 20px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.section-presentation nav .presentation-button:hover {
+  opacity: 0.8;
+  box-shadow: 0px 4px 10px 0px black;
+}
+
+/****** Fonctionnement ***********/
+.functioning-section {
+  padding-bottom: 55px;
+}
+.functioning-section h2 {
+  margin-top: 50px;
+  margin-left: 23px;
+  margin-bottom: 25px;
+}
+
+.list-functioning {
+  counter-increment: steps;
+  list-style: none;
+  background-color: #f6f6f6;
+  padding: 27px 0px 27px 27px;
+  border-radius: 20px;
+  margin: 21px 20px 20px -8px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.list-functioning::before {
+  content: counter(steps);
+  background: #9356DC;
+  color: white;
+  width: 1.2em;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: 22px;
+}
+.list-functioning .functioning-icons {
+  font-size: 18px;
+  padding-inline: 25px;
+  margin-left: -20px;
+}
+.list-functioning .fa-mobile-screen-button, .list-functioning .fa-list-ul {
+  color: gray;
+}
+.list-functioning .fa-store {
+  color: #9356DC;
+}
+.list-functioning .functioning-text {
+  font-weight: bold;
+}
+
+/****** Section-restaurants ***********/
+.section-restaurants {
+  position: relative;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 55px;
+}
+.section-restaurants h2 {
+  margin: 55px 0px 18px 15px;
+}
+
+.article-cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px 18px 15px;
+}
+.article-cards img {
+  display: flex;
+  object-fit: cover;
+  gap: 0;
+  /****** à verifier ********/
+  width: 100%;
+  height: 180px;
+  border-radius: 15px 15px 0px 0px;
+}
+.article-cards .card-img {
+  /******* à verifier *******/
+  display: inline-block;
+  position: relative;
+}
+.article-cards .card-txt {
+  position: relative;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.article-cards .card-txt .card-title {
+  color: black;
+  margin: 15px 0px 0px 15px;
+}
+.article-cards .card-txt .card-subtitle {
+  color: black;
+  margin: 2px 0px 15px 15px;
+  font-weight: 300;
+}
+.article-cards .card-txt .fa-heart {
+  position: absolute;
+  color: black;
+  font-weight: lighter;
+  font-size: x-large;
+  right: 48px;
+  bottom: 30px;
+}
+.article-cards .card-txt .fa-heart:hover {
+  font-weight: bolder;
+  color: #9356DC;
+}
+
+.logo-nouveau {
+  position: absolute;
+  background: #99E2D0;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+/****** Footer ***********/
+footer {
+  background-color: var(--Grey, #353535);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+footer li {
+  list-style: none;
+  margin-left: -41px;
+  margin-bottom: 10px;
+}
+footer a {
+  color: white;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.fa-handshake-angle {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-right: -2px;
+}
+
+/****** Media queries ***********/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /****** Hedear (tablette version) ***********/
+  h1 {
+    font-size: 32px;
+  }
+  /****** Functioning tablette version ***********/
+  .functioning-section {
+    padding-bottom: 20px;
+  }
+  .functioning-section h2 {
+    margin-left: 15px;
+  }
+
+  .ol-functioning {
+    width: 50%;
+  }
+  .ol-functioning .list-functioning {
+    padding: 27px 0px 27px 0px;
+  }
+  .ol-functioning .list-functioning .functioning-icons {
+    font-size: 18px;
+    margin: -15px 0px 0px 0px;
+    justify-content: center;
+    display: flex;
+  }
+  .ol-functioning .list-functioning .functioning-text {
+    font-weight: bold;
+    display: flex;
+    padding: 0px 0px 0px 4px;
+    justify-content: center;
+  }
+
+  /****** Section-restaurants tablette version ***********/
+  .section-restaurants {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .section-restaurants h2 {
+    margin: 0px 0px 0px 15px;
+  }
+
+  .restaurant-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /****** Footer  tablette version ***********/
+  footer {
+    align-items: center;
+  }
+  footer h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  footer ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+  }
+}
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: 1024px) {
+  /****** Header (desktop) ***********/
+  h1 {
+    font-size: 35px;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .header-form {
+    box-shadow: none;
+  }
+
+  .header-search-bar {
+    /****** à verifier ***********/
+    box-shadow: none;
+  }
+
+  /****** Site présentation (desktop) ***********/
+  .section-presentation {
+    box-shadow: none;
+  }
+
+  /****** Functioning (desktop) ***********/
+  .functioning-section {
+    padding-bottom: 20px;
+  }
+
+  .article-functioning {
+    display: grid;
+    justify-content: center;
+    margin-bottom: -5px;
+  }
+  .article-functioning h2 {
+    margin-bottom: 0px;
+  }
+  .article-functioning .ol-functioning {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .article-functioning .ol-functioning .list-functioning {
+    padding: 27px 59px 27px 27px;
+  }
+  .article-functioning .ol-functioning .list-functioning::before {
+    margin-inline: -37px;
+    left: unset;
+  }
+
+  .li1 {
+    /****** à verifier ***********/
+    padding-right: 80px;
+    margin: 0;
+  }
+
+  /****** Restaurants Cards (desktop)***********/
+  .section-restaurants {
+    background: #f6f6f6;
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .section-restaurants h2 {
+    margin: 0px 0px 0px 15px;
+  }
+  .section-restaurants .restaurant-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1045px;
+    gap: 70px;
+  }
+
+  /****** Footer (desktop) ***********/
+  footer {
+    flex-direction: row-reverse;
+    align-items: last baseline;
+    gap: 70px;
+    padding: 40px 0px 0px 0px;
+  }
+  footer h2 {
+    margin: 0px 85px 0px 0px;
+  }
+
+  footer ul {
+    display: flex;
+    gap: 50px;
+  }
+  footer ul .footer-icons {
+    margin-left: -115px;
+  }
+  footer ul a {
+    margin-right: 25px;
+  }
+
+  .fa-handshake-angle {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+}
