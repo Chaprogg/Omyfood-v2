@@ -191,7 +191,7 @@ h1 {
             color: black;
             font-weight: lighter;
             font-size: x-large;
-            right: 48px;
+            right: 18px;
             bottom: 30px;
         }
         .fa-heart:hover {
@@ -204,6 +204,7 @@ h1 {
 .logo-nouveau {
     position:absolute;
     background: $tiercary-color;
+    color: #008766;
     top:15px;
     right: 15px;
     padding: 10px;
