@@ -83,6 +83,11 @@ main {
     .fa-heart {
         font-size: x-large;
     }
+
+    .fa-heart:hover {
+        font-weight: bolder;
+        color: #9356DC;
+    }
 }
 /****** Menu-section ***********/
 .menu-h2-and-heart {
