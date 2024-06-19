@@ -20,8 +20,8 @@
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 7px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     
   }
   
@@ -32,8 +32,8 @@
   .fa-arrow-left {
     position: absolute;
     color: black;
-    font-size: x-large;
-    top: 27px;
+    font-size: 20px;
+    top: 23px;
     left: 25px;
   }
   
@@ -210,8 +210,13 @@
    /****** Header (tablette version) ***********/
     h1 {
       font-size: 32px;
+      padding-top: 13px;
+      padding-bottom: 13px;
     }
     
+    .fa-arrow-left {
+      top: 26px;
+    }
     /****** Main (tablette-version) ***********/
     main {
       margin-right: 115px;
@@ -262,8 +267,12 @@
     /****** Header ***********/
     h1 {
       font-size: 35px;
-      margin: 10px 0px 10px 0px;
-      padding: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .fa-arrow-left {
+      top: 34px;
     }
   
     header img {

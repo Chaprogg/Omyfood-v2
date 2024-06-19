@@ -31,8 +31,8 @@ h1 {
     display: flex;
     justify-content: center;
     margin:0;
-    padding-top: 20px;
-    padding-bottom: 7px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 header {
@@ -42,8 +42,8 @@ header {
 .fa-arrow-left {
     position: absolute;
     color:black;
-    font-size: x-large;
-    top: 27px;
+    font-size: 20px;
+    top: 23px;
     left: 25px;
 }
 
@@ -239,6 +239,11 @@ footer {
     /****** Header (tablette version) ***********/
     h1 {
         font-size: 32px;
+        padding-top: 13px;
+        padding-bottom: 13px; 
+    }
+    .fa-arrow-left {
+        top: 26px;
     }
 
 /****** Main (tablette-version) ***********/
@@ -306,6 +311,10 @@ footer {
             width: 100%;
             height: 400px;
             object-fit: cover;
+        }
+
+        .fa-arrow-left {
+            top: 34px;
         }
     /****** Main (desktop) ***********/
     main {
