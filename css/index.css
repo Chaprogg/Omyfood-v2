@@ -162,6 +162,7 @@ h1 {
   font-weight: 300;
 }
 .article-cards .card-txt .fa-heart {
+  transition: all 0.3s linear 0s;
   position: absolute;
   color: black;
   font-weight: lighter;

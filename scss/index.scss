@@ -187,6 +187,7 @@ h1 {
             font-weight: 300;
         }
         .fa-heart {
+            transition: all 0.3s linear 0s;
             position: absolute;
             color: black;
             font-weight: lighter;

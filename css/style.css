@@ -173,6 +173,7 @@ img {
 .logo-nouveau {
     position: absolute;
     background: var(--Green, #99e2d0);
+    color: #008766;
     top: 15px;
     right: 15px;
     padding: 10px;
@@ -184,7 +185,7 @@ img {
     position: absolute;
     font-weight: lighter;
     font-size: x-large;
-    right: 48px;
+    right: 18px;
     bottom: 30px;
 }
 

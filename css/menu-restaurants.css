@@ -71,6 +71,7 @@
     margin-right: 40px;
   }
   main .fa-heart {
+    transition: all 0.3s linear 0s;
     font-size: x-large;
   }
 
@@ -80,7 +81,7 @@
   }
   
   /****** Menu-section ***********/
-  .section-entrees {
+.section-entrees {
     animation: fadein 3.5s;
 }
   
