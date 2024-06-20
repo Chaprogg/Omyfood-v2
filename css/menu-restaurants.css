@@ -80,6 +80,28 @@
   }
   
   /****** Menu-section ***********/
+  .section-entrees {
+    animation: fadein 3.5s;
+}
+  
+.section-plats {
+    animation: fadein 7s;
+}
+
+.section-desserts {
+    animation: fadein 10.5s;
+}
+  
+@keyframes fadein {
+    from {
+    opacity: 0;
+    }
+
+    to {
+    opacity: 1;
+    }
+}
+
   .section-entrees, .section-plats, .section-desserts {
     display: flex;
     gap: 12px;
@@ -295,7 +317,7 @@
       padding-left: 200px;
       padding-right: 200px;
     }
-    /****** Menu section ***********/
+    /****** Menu section (desktop) ***********/
     .menu-h2-and-heart {
       display: flex;
       align-items: baseline;
@@ -303,7 +325,7 @@
       margin-top: 35px;
     }
   
-    /****** Footer ***********/
+    /****** Footer (desktop) ***********/
     footer {
       flex-direction: row-reverse;
       align-items: last baseline;
