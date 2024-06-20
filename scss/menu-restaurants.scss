@@ -182,8 +182,6 @@ main {
     }
 }
 
-
-
 .cards-subtitle {
     font-size: 15px;
     font-weight: 300;
@@ -323,22 +321,23 @@ footer {
 
     /****** Header ***********/
 
-    h1  {
+    h1 {
         font-size: 35px;
-        margin:  10px 0px 10px 0px;
-
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-    header img {
-            position: relative;
-            top: 45px;
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-        }
 
-        .fa-arrow-left {
-            top: 34px;
-        }
+    header img {
+        position: relative;
+        top: 45px;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .fa-arrow-left {
+        top: 34px;
+    }
     /****** Main (desktop) ***********/
     main {
         margin-right: 200px;
@@ -355,29 +354,28 @@ footer {
     }
 
     /****** Footer (desktop) ***********/
-
     footer {
         flex-direction: row-reverse;
         align-items: last baseline;
         gap: 70px;
-        padding: 40px 95px 0px 0px;
+        padding: 40px 0px 0px 0px;
     
-
         h2 {
             margin: 0px 85px 0px 0px;
         }
-    
+    }
+
+    footer ul {
+        display: flex;
+        gap: 50px;
+        
+        .footer-icons {
+            margin-left: -115px;
+        }
+        
         a {
             margin-right: 25px;
         }
-    
-        ul {
-            display: flex;
-            gap: 50px;
-        }
-    }
-    .footer-icons {
-        margin-left: -115px;
     }
 
     .fa-handshake-angle {
