@@ -347,6 +347,10 @@ footer {
     /****** Site présentation (desktop) ***********/
     .section-presentation {
         box-shadow: none;
+
+        .h2-presentation {
+            font-size: 40px;
+        }
     }
 
     /****** Functioning (desktop) ***********/
