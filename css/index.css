@@ -173,6 +173,7 @@ h1 {
 .article-cards .card-txt .fa-heart:hover {
   font-weight: bolder;
   color: #9356DC;
+  scale: 120%;
 }
 
 .logo-nouveau {
@@ -289,8 +290,8 @@ footer a {
   /****** Header (desktop) ***********/
   h1 {
     font-size: 35px;
-    margin: 10px 0px 10px 0px;
-    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .header-form {

@@ -78,6 +78,7 @@
   main .fa-heart:hover {
     font-weight: bolder;
     color: #9356DC;
+    scale: 120%;
   }
   
   /****** Menu-section ***********/
