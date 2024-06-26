@@ -166,10 +166,7 @@ h1 {
         z-index: 1;
         animation: overlay-hidd 3s forwards;
 
-        .fa-utensils {
-            border: 3px solid #9356DC;
-            border-radius: 50%;
-            background-color: black;
+        .fa-arrow-rotate-right {
             color: white;
             font-size: 60px;
             animation: rotate 1.5s linear infinite;
