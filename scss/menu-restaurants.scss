@@ -55,7 +55,7 @@ header img {
 }
 
 /****** Main-section **********/
-main {
+.main-section {
     position: inherit;
     background-color: #f6f6f6;
     display: flex;
@@ -265,7 +265,7 @@ footer {
     }
 
 /****** Main (tablette-version) ***********/
-    main {
+    .main-section {
         margin-right: 115px;
         margin-left: 115px;
         padding-bottom: 84px;
@@ -336,7 +336,7 @@ footer {
         top: 34px;
     }
     /****** Main (desktop) ***********/
-    main {
+    .main-menu {
         margin-right: 200px;
         margin-left: 200px;
         padding-left: 200px;
