@@ -11,9 +11,6 @@ $desktop-screen: 1024px;
 $tablette-screen-min: 768px;
 $tablette-screen-max: 1023px;
 
-//mixins
-
-
 body { 
     position: relative;
     margin:0;
@@ -80,12 +77,11 @@ main {
         font-size: 28px;
         margin-right: 40px;
     }
-    .fa-heart {
-        transition: all 0.3s linear 0s;
-        font-size: x-large;
+    .fa-heart-one {
+        
     }
 
-    .fa-heart:hover {
+    .fa-heart-two:hover {
         font-weight: bolder;
         color: #9356DC;
         scale: 120%;
@@ -159,7 +155,7 @@ main {
         padding-top: 35px;
         padding-bottom: 35px;
         width: 0;
-        transition: all 1s;
+        transition: all 0.4s;
     }
     
     &:hover .checkmark {
