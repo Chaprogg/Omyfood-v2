@@ -1,0 +1,376 @@
+/****** General ***********/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+// variables
+$primary-color:#9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color:#99E2D0;
+$desktop-screen: 1024px;
+$tablette-screen-min: 768px;
+$tablette-screen-max: 1023px;
+
+body { 
+    position: relative;
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/****** Header ***********/
+h1 {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 28px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+header {
+    margin: 0;
+}
+
+.fa-arrow-left {
+    position: absolute;
+    color:black;
+    font-size: 20px;
+    top: 23px;
+    left: 25px;
+}
+
+header img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: -39px;
+    top: 39px;
+    object-fit: cover;
+
+}
+
+/****** Main-section **********/
+.main-section {
+    position: inherit;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 40px 0px 0px;
+    gap: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .menu-h2-and-heart {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    
+    h2 {
+        font-family: 'Shrikhand';
+        text-align: center;
+        font-size: 28px;
+        margin-right: 40px;
+    }
+}
+
+/****** Menu-section ***********/
+
+.section-entrees {
+    animation: fadein 3.5s;
+}
+  
+.section-plats {
+    animation: fadein 7s;
+}
+
+.section-desserts {
+    animation: fadein 10.5s;
+}
+  
+@keyframes fadein {
+    from {
+    opacity: 0;
+    }
+
+    to {
+    opacity: 1;
+    }
+}
+
+.section-entrees, .section-plats, .section-desserts {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    
+    h3 {
+        margin:0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.menu-title-cards {
+    font-size: 17px;
+    font-weight: lighter;
+
+    &::after{
+        content: '';      /******* signification '' ***********/
+        border-bottom: 3px solid $tertiary-color;
+        position: relative;
+        width: 41px;
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+.background-cards {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    padding: 12px 0px 12px 12px;
+    border-radius: 15px;
+    gap: 15px;
+    align-items: end;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px 0px rgba(0,0, 0, 0.1);
+
+    .checkmark {
+        background-color: $tertiary-color;
+        margin-top: -30px;
+        margin-bottom: -24px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        width: 0;
+        transition: all 0.4s;
+    }
+    
+    &:hover .checkmark {
+        padding-left: 22px;
+        padding-right: 40px;
+    }
+    
+    .articles-ellipsis {
+        overflow: hidden;
+    }
+    
+    .fa-circle-check {
+        color: white;
+        font-size: 23px;
+    }
+    
+    .price {
+        margin-left: auto;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+.cards-subtitle {
+    font-size: 15px;
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 5px 0px 0px 0px;
+}
+
+.order-button {
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%,
+                                      rgba(244,109,206,1) 100%);
+    color: white;
+    font-size: 16px;
+    border-radius: 25px ;
+    padding: 15px 50px 15px 50px; 
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    align-self: center;
+    margin-top: 28px;
+    margin-bottom: 40px;
+
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 1);
+    }
+}
+
+/****** Footer ***********/
+footer {
+    background-color: var(--Grey, #353535);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 17px;
+
+    h2 {
+        font-family: 'Shrikhand';
+        font-weight: normal;
+        font-size: 18px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+        ul {
+            margin-bottom: 10px;
+
+            li {
+                list-style: none;
+                margin-left: -41px;
+                margin-bottom: 10px;
+                
+                a {
+                    color: white;
+                }
+            }                
+        }
+}    
+     
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.fa-handshake-angle {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-right: -2px;
+}
+
+/****** Media queries ***********/
+
+@media screen and (min-width: $tablette-screen-min) and (max-width: $tablette-screen-max) {
+
+    /****** Header (tablette version) ***********/
+    h1 {
+        font-size: 32px;
+        padding-top: 13px;
+        padding-bottom: 13px; 
+    }
+    .fa-arrow-left {
+        top: 26px;
+    }
+
+/****** Main (tablette-version) ***********/
+    .main-menu {
+        margin-right: 115px;
+        margin-left: 115px;
+        padding-bottom: 84px;
+    }
+
+/****** Menu section (tablette-version) ***********/
+    .menu-h2-and-heart {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        margin-bottom: -40px;
+    }
+
+    .menu-title-cards::after {
+        content: "";
+        border-bottom: 3px solid $tertiary-color;
+        width: 41px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .order-button {
+        position: absolute;
+        bottom: -22px;
+    }
+/****** Footer  (tablette-version) ***********/
+
+    footer {
+        padding-bottom: 40px;
+        padding-left: 0;
+    
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+        } 
+    }
+}
+/****** Media queries ***********/
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: $desktop-screen) {
+
+    /****** Header ***********/
+
+    h1 {
+        font-size: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    header img {
+        position: relative;
+        top: 45px;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .fa-arrow-left {
+        top: 34px;
+    }
+    /****** Main (desktop) ***********/
+    .main-menu {
+        margin-right: 200px;
+        margin-left: 200px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .menu-h2-and-heart {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    /****** Footer (desktop) ***********/
+    footer {
+        flex-direction: row-reverse;
+        align-items: last baseline;
+        gap: 70px;
+        padding: 40px 0px 0px 0px;
+    
+        h2 {
+            margin: 0px 85px 0px 0px;
+        }
+    }
+
+    footer ul {
+        display: flex;
+        gap: 50px;
+        
+        .footer-icons {
+            margin-left: -115px;
+        }
+        
+        a {
+            margin-right: 25px;
+        }
+    }
+
+    .fa-handshake-angle {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+}
