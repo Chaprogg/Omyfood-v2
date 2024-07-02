@@ -290,7 +290,7 @@ footer ul li a {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  animation: overlay-hidd 3s forwards;
+  animation: overlay-hidd 2s forwards;
 }
 .section-restaurants .overlay-loading .fa-arrow-rotate-right {
   color: white;
@@ -360,6 +360,7 @@ footer ul li a {
 .article-cards .card-txt .fa-heart-masked {
   position: absolute;
   font-size: x-large;
+  color: black;
   right: 18px;
   bottom: 30px;
 }
