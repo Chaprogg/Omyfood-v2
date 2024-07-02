@@ -111,14 +111,14 @@ header img {
     
     & > h3 {
         margin:0;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: lighter;
 
         &::after{
             content: '';      /******* signification '' ***********/
             border-bottom: 3px solid $tertiary-color;
             position: relative;
-            width: 36px;
+            width: 38px;
             display: block;
             margin-top: 5px;
         }
