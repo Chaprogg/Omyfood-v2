@@ -109,26 +109,28 @@ header img {
     gap: 12px;
     flex-direction: column;
     
-    h3 {
+    & > h3 {
         margin:0;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        font-size: 15px;
+        font-weight: lighter;
+
+        &::after{
+            content: '';      /******* signification '' ***********/
+            border-bottom: 3px solid $tertiary-color;
+            position: relative;
+            width: 36px;
+            display: block;
+            margin-top: 5px;
+        }
     }
 }
 
 .menu-title-cards {
-    font-size: 17px;
-    font-weight: lighter;
-
-    &::after{
-        content: '';      /******* signification '' ***********/
-        border-bottom: 3px solid $tertiary-color;
-        position: relative;
-        width: 41px;
-        display: block;
-        margin-top: 5px;
-    }
+        font-size: 18px;
+        margin:0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 }
 
 .background-cards {
@@ -153,8 +155,8 @@ header img {
     }
     
     &:hover .checkmark {
-        padding-left: 22px;
-        padding-right: 40px;
+        padding-left: 19px;
+        padding-right: 43px;
     }
     
     .articles-ellipsis {
@@ -229,7 +231,7 @@ header img {
         margin-bottom: -40px;
     }
 
-    .menu-title-cards::after {
+    .menu-title-car::after {  /**** à supprimer  02 07 2024****/
         content: "";
         border-bottom: 3px solid $tertiary-color;
         width: 41px;
