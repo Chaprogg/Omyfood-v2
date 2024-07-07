@@ -251,27 +251,23 @@
         padding-bottom: 20px;
     }
 
-    .ol-functioning {
-        width: 50%;
+    .list-functioning {
+        padding: 27px 0px 27px 0px;
+        
+        .functioning-icons {
+            font-size: 18px;
+            margin: -15px 0px 0px 0px;
+            justify-content: center;
+            display: flex;
+        }
 
-        .list-functioning {
-            padding: 27px 0px 27px 0px;
-            
-            .functioning-icons {
-                font-size: 18px;
-                margin: -15px 0px 0px 0px;
-                justify-content: center;
-                display: flex;
-            }
-
-            .functioning-text {
-                font-weight: bold;
-                display: flex;
-                padding: 0px 0px 0px 4px;
-                justify-content: center;
-            }
-        }     
-    }
+        .functioning-text {
+            font-weight: bold;
+            display: flex;
+            padding: 0px 0px 0px 4px;
+            justify-content: center;
+        }
+    }     
     
     /****** Section-restaurants tablette version ***********/
     .section-restaurants {
