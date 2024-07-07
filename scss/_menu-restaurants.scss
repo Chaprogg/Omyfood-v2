@@ -82,16 +82,8 @@ header img {
 
 /****** Menu-section ***********/
 
-.section-entrees {
-    animation: fadein 3.5s;
-}
-  
-.section-plats {
-    animation: fadein 7s;
-}
-
-.section-desserts {
-    animation: fadein 10.5s;
+.section-entrees, .section-plats, .section-desserts {
+    animation: fadein 4ms;
 }
   
 @keyframes fadein {
