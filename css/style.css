@@ -397,19 +397,16 @@ footer ul li a {
   .functioning-section {
     padding-bottom: 20px;
   }
-  .ol-functioning {
-    width: 50%;
-  }
-  .ol-functioning .list-functioning {
+  .list-functioning {
     padding: 27px 0px 27px 0px;
   }
-  .ol-functioning .list-functioning .functioning-icons {
+  .list-functioning .functioning-icons {
     font-size: 18px;
     margin: -15px 0px 0px 0px;
     justify-content: center;
     display: flex;
   }
-  .ol-functioning .list-functioning .functioning-text {
+  .list-functioning .functioning-text {
     font-weight: bold;
     display: flex;
     padding: 0px 0px 0px 4px;
