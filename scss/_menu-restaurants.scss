@@ -65,7 +65,7 @@ header img {
     position: absolute;
     font-weight: bolder;
     color: $primary-color;
-    animation: heart 2s forwards;
+    animation: heart 2s infinite alternate;
 }
 
 @keyframes heart {
