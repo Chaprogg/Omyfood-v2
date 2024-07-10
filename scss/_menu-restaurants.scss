@@ -57,28 +57,20 @@ header img {
 
 .fa-heart-masked {
     position: absolute;
-    font-size: x-large;
+    background:linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(244, 109, 206) 100%);
     color: transparent;
+    font-size: x-large;
     right: 0px;
-}
-
-.fa-heart-masked:hover {
-    background: linear-gradient(0deg,rgba(147,86,220,1) 0%, rgba(244,109,206,1) 100%);
     background-clip: text;
-    animation: heart 2s infinite alternate;
-}
-
-@keyframes heart {
-    0% {
-        transform: scale(0.4);
-        opacity: 0.4;
-    }
-    
-    100% {
-        transform: scale(1.3);
-        opacity: 1;
-    }
-}
+    opacity: 0;
+    transform: scale(0);
+    transition: all 2s ease-in-out; 
+  }
+  
+  .fa-heart-menu:hover .fa-heart-masked {
+    transform: scale(1.3);
+    opacity: 1;
+  }
 
 /****** Menu-section ***********/
 .section-entrees {
