@@ -214,8 +214,8 @@
         
         .fa-heart-masked:hover {
             position: absolute;
-            font-weight: bolder;
-            color: $primary-color;
+            background: linear-gradient(0deg,rgba(147,86,220,1) 0%, rgba(244,109,206,1) 100%);
+            background-clip: text;
             animation: heart 2s infinite alternate;
         }
 
