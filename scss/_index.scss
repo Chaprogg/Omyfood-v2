@@ -207,13 +207,12 @@
         .fa-heart-masked {
             position: absolute;
             font-size: x-large;
-            color: black;
+            color: transparent;
             right: 18px;
             bottom: 30px;
         }
         
         .fa-heart-masked:hover {
-            position: absolute;
             background: linear-gradient(0deg,rgba(147,86,220,1) 0%, rgba(244,109,206,1) 100%);
             background-clip: text;
             animation: heart 2s infinite alternate;
@@ -222,7 +221,7 @@
         @keyframes heart {
             0% {
                 transform: scale(0.4);
-                opacity: 0.3;
+                opacity: 0.5;
             }
             
             100% {
